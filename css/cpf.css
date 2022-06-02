@@ -1,0 +1,63 @@
+.container {
+    font-size: 1.8em;
+    display: flexbox;
+    text-align: center;
+
+    justify-content: flex-end;
+
+
+}
+
+.img {
+    flex-direction: column;
+    text-align: center;
+    margin-top: -20%;
+
+}
+
+h1 {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+
+}
+
+.pesquisar-cpf {
+
+    font-size: 0.8em;
+    text-align: center;
+    padding: 5px 5px;
+}
+
+
+.programar-passo {
+    max-width: 700px;
+    margin: auto;
+    box-shadow: 0 0 1em black;
+    background-color: whitesmoke;
+    padding: 1% 0%;
+
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section .btn-pular {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    flex-direction: row;
+}

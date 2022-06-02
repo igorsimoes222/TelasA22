@@ -1,0 +1,68 @@
+:root{
+    --counter: 0;
+    --bar-color: rgb(43, 255, 0);
+  }
+  
+  .container-barra{
+    width: 700px;
+    height: 30px;
+    border: solid 7px #222;
+    border-radius: 1px;
+    margin-top: -10%;
+}
+  
+  .barra{
+    height: 100%;
+    border-radius: inherit;
+    background-color: var(--bar-color);
+    animation-name: barra;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+    
+  }
+  
+  .barra::after{
+    content: var(--counter);
+    font-size: 30px;
+    display: block;
+    color: black;
+    text-align: right;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  .foto{
+
+text-align: center;
+justify-content: center;
+margin-top: 17%;
+  }
+  
+  @keyframes barra{
+    
+    0%{
+      width: 0;
+      --counter: "0%"
+    }
+    
+    25%{
+       width: 25%;
+      --counter: "25%";
+    }
+    
+    50%{
+       width: 50%;
+      --counter: "50%";
+    }
+    
+    75%{
+       width:75%;
+      --counter: "75%";
+    }
+    
+    100%{
+      width: 100%;
+      --counter: "100%";
+    }
+    
+    
+  }
